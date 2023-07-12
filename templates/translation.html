@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+            background-position: center;
+            background-repeat: repeat;
+            padding: 1em;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(9, 29, 240);
+
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+        }
+
+        h2 {
+            color: darkgreen;
+            padding-left: 400px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            font-size: 1.5em;
+        }
+
+        .text {
+            border: 2px solid rgb(26, 121, 209);
+            margin: auto;
+            background-color: beige;
+            padding: 10px;
+            width: 90%;
+        }
+
+        strong {
+            font-size: 22px;
+            text-align: left;
+            padding: 12px;
+            color: rgb(191, 72, 12);
+        }
+
+        .notebox {
+            font-weight: bolder;
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: darkslateblue
+        }
+
+        h3 {
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SUMMARY TRANSLATION</h1>
+    <br />
+    <h2>Select the <em>Target Language</em></h2>
+    <div>
+        <form action="/translate" method="POST">
+            <select name="language" STYLE="font-family :Georgia, 'Times New Roman', Times, serif;
+        font-size : 20pt">
+                <option value="te">Telugu</option>
+                <option value="hi">Hindi</option>
+                <option value="ml">Malayalam</option>
+                <option value="ur">Urdu</option>
+                <option value="ta">Tamil</option>
+            </select>
+            <h3>Click on Submit button to obtain <em>Translated Text:</em></h3>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <br />
+    <br />
+    <strong><em>Translated Text:</em></strong>
+    <br />
+    <br />
+    <div>
+        <p id="output" class="text">{{result}}</p>
+    </div>
+    <div>
+        <p id="output" class="notebox">Hope u Enjoyed the Translated summary:)</p>
+    </div>
+</body>
+
+</html>
