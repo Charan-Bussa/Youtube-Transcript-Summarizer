@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Transcript Summariser</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background-color: aqua;
+            width: max-content;
+            max-width: 800px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: coral;
+        }
+
+        button[disabled] {
+            background-color: lightcoral;
+            color: white;
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: lightpink;
+        }
+
+        p {
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+
+        .heading {
+            color: darkblue;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h2 {
+            text-align: left;
+            padding: 12px;
+            color: rgb(191, 72, 12);
+        }
+
+        div {
+            border: 2px solid rgb(26, 121, 209);
+            margin: auto;
+            background-color: beige;
+            padding: 10px;
+            width: 90%;
+        }
+
+        .note {
+            padding: 15px;
+            font-size: large;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Youtube Transcript Summariser</h1>
+    <button id="summarise" type="button">Summarise</button>
+    <p class="note">Wait for a while...<em>Summarized text</em> will be pulled out here</p>
+    <h2>SUMMARY:</h2>
+    <div>
+        <p id="output"></p>
+    </div>
+    <br />
+    <a href="http://127.0.0.1:5000/translate" target="_blank">Click Here for Translation</a>
+    <script src="popup.js"></script>
+</body>
+
+</html>
